@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws RuntimeException {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         System.out.println(calc(input));
@@ -11,7 +11,7 @@ public class Main {
         private static final int[] arabicValues = {100, 90, 50, 40, 10, 9, 5, 4, 1};
         private static final String[] romanValues = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
-        public static int romanToArab(String value) throws RuntimeException {
+        public static int romanToArab(String value) {
             switch (value) {
                 case "I":
                     return 1;
@@ -39,7 +39,7 @@ public class Main {
 
         }
 
-        public static String arabToRoman(int input) throws ArithmeticException {
+        public static String arabToRoman(int input) {
             if (input < 1) {
                 throw new ArithmeticException();
             }
@@ -61,7 +61,7 @@ public class Main {
     }
 
 
-    public static String calc(String input) throws RuntimeException {
+    public static String calc(String input) {
 
         String[] numbers = input.split(" ");
         if (numbers.length != 3) {
