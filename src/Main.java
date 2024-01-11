@@ -36,7 +36,6 @@ public class Main {
                 default:
                     throw new IllegalArgumentException();
             }
-
         }
 
         public static String arabToRoman(int input) {
@@ -60,9 +59,7 @@ public class Main {
         }
     }
 
-
     public static String calc(String input) {
-
         String[] numbers = input.split(" ");
         if (numbers.length != 3) {
             throw new IllegalArgumentException();
@@ -89,19 +86,15 @@ public class Main {
             case "+":
                 result = firstNum + secondNum;
                 break;
-
             case "-":
                 result = firstNum - secondNum;
                 break;
-
             case "/":
                 result = firstNum / secondNum;
                 break;
-
             case "*":
                 result = firstNum * secondNum;
                 break;
-
             default:
                 throw new IllegalArgumentException();
         }
