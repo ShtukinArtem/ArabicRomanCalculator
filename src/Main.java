@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) throws RuntimeException {
         Scanner scanner = new Scanner(System.in);
@@ -9,7 +10,7 @@ public class Main {
     static class Converter {
         private static final int[] arabicValues = {100, 90, 50, 40, 10, 9, 5, 4, 1};
         private static final String[] romanValues = {"C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
-        
+
         public static int romanToArab(String value) throws RuntimeException {
             switch (value) {
                 case "I":
